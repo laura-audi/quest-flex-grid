@@ -1,0 +1,67 @@
+body{
+    width: 656px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "destaque propaganda"
+                         "destaque aside"
+                         "destaque aside"
+                         "destaque aside";
+    grid-template-columns: repeat(60%, 40%);
+    grid-column-gap: 0.5em;
+    margin-top: 20px;
+}
+
+.video{
+    display: grid;
+    grid-template-areas: "videoImg videoTxt";
+    grid-template-columns: repeat(2, (40% 60%));
+    grid-column-gap: 0.5em;
+    margin-top: 5px;
+    margin-bottom: 16px;
+}
+.videoTxt h2{
+    font-size: 14px;
+    margin:0;
+    font-weight: bold;
+    line-height: 16px;
+}
+.videoTxt ul{
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    list-style: none;
+    display: table-footer-group;
+}
+.videoTxt ul li{
+    margin: 5px 0 0 5px;
+}
+
+.destaque{
+   grid-area: destaque;
+}
+
+.destaque img{
+    width: 100%;
+}
+.destaque p, h3{
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.destaque h1{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.propaganda{
+   grid-area: propaganda;
+}
+.aside{
+   grid-area: aside;
+}

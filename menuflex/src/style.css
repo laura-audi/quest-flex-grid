@@ -1,0 +1,79 @@
+body{
+    font-family: 'Public Sans', sans-serif;
+}
+
+.logo img{
+    width:48.28px; 
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 23,5;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu ul{
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+   
+}
+.menu ul li{
+    margin: 0 20px;
+   
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-weight: 400;
+}
+.menu ul li a:hover{
+    background-color: #5bc241;
+    color: white;
+}
+.menu ul li button{
+    background-color: #5bc241;
+    color: white;
+    border-radius: 10px;
+    width: 127px;
+    height: 39px;
+    font-weight: 300;
+}
+
+ @media(max-width:744px){
+    .container{
+        display: block;
+        text-align: center;
+    }
+    .menu ul {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .menu ul li{
+        margin-bottom: 30px;
+        font-size: 40px;
+    }
+    .logo{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .menu ul button{
+        font-size: 15px;
+    }
+} 
